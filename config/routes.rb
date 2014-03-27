@@ -7,5 +7,7 @@ SentinelsApi::Application.routes.draw do
     get '/heroes/:id/deactivate' => 'heroes#deactivate'
     get '/heroes/:id'            => 'heroes#show'
     get '/actives'               => 'application#actives'
+    get '/cards/:id/activate'    => 'cards#activate'
+    get '/cards/:id/deactivate'  => 'cards#deactivate'
   end
 end

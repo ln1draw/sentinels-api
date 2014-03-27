@@ -61,6 +61,20 @@ class CardsController < ApplicationController
     end
   end
 
+  def activate
+    @card = Card.find(params[:id])
+    @card.update(active: true)
+    @card.save!
+    render :show
+  end
+
+  def deactivate
+    @card = Card.find(params[:id])
+    @card.update(active: false)
+    @card.save!
+    render :show
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_card

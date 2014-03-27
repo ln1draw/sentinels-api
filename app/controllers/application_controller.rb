@@ -5,6 +5,6 @@ class ApplicationController < ActionController::Base
 
   def actives
     @active_heroes = Hero.where(active: true)
-    @active_cards == Card.where(active: true)
+    @active_cards = Card.where(active: true)
   end
 end
