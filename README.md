@@ -1,0 +1,3 @@
+# Sentinels API
+
+This is a companion API to my project Sentinels of the Please-Don't-Sue-Me, which is located here: https://github.com/shanghaiellen/sentinels . I hope to eventually rewrite this in Django, but at this moment, having a functioning API very quickly is more important than the learning experience (this is because not having a functioning API is making it difficult to progress on the front end).
